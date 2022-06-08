@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@100&display=swap');
+/*CABECERA*/
+/*RESPONSIVE BETA*/
+@media (min-width: 200px) and (max-width: 600px) {
+  .menu-superior {
+    flex-direction: column!important;
+  }
+  .cabecera-escritorio {
+    display: none;
+  }
+  .cabecera-movil {
+    display: block!important;
+  }
+}
+body main{
+  width: 70%;
+}
+main {
+  font-family: 'Overpass', sans-serif;
+}
+/*LO DEJO SIN FOTO, todas salen pixeladas*/
+/*
+.cabecera {
+  background-image:  url("imagenes/d_aplicaciones_multiplataforma_3.jpg");
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+*/
+.cabecera {
+  height: 200px;
+  background: rgb(0,0,0);
+  background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(51,51,51,1) 0%, rgba(0,0,0,1) 41%, rgba(255,255,255,1) 43%, rgba(150,150,150,1) 49%, rgba(37,37,37,1) 83%, rgba(0,0,0,1) 100%); display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cabecera span {
+  text-align: center;
+  position: absolute; 
+  font-family: Arial; 
+  margin: 0 auto;
+  font-size: 70px; 
+  COLOR: #ffffff;
+  /*EFECTO 3D AL TITULO*/ 
+  text-shadow: 0px 1px 0px #929292,
+                1px 2px 0px #929292,
+                2px 3px 0px #929292,
+                3px 4px 0px #929292,
+                4px 5px 0px #929292,
+                5px 6px 0px #929292;
+  text-shadow: 1px 0px 0px #929292,
+                2px 1px 0px #929292,
+                3px 2px 0px #929292,
+                4px 3px 0px #929292,
+                5px 4px 0px #929292,
+                6px 5px 0px #929292,
+                0px 0px 70px #929292;
+  font-weight: bolder;
+  
+}
+/*ESTO OCULTA EL SPAN DE LA VERSION MOVIL*/
+.cabecera-movil {
+  display: none;
+}
+/*BOTON DE BUSCAR*/
+.buscador {
+  float: right;
+  margin: 10px;
+}
+.buscador .caja {
+  height: 35px;
+}
+.buscador .boton-buscar {
+  height: 30px;
+  border-radius: 15px 15px 15px 15px;
+}
+/*MENU*/
+.contenido-desplegable a:active, .menu-superior a:active {
+  background-color: #ddd;
+  color: #333;
+}
+.menu-superior {
+  background-color: #333;
+  font-family:'Arial Narrow Bold', sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.boton-menu, .boton-menu a {
+  background-color: #333;
+  color: white;
+  padding: 18px;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+.desplegable {
+  position: relative;
+  display: inline-block;
+}
+.contenido-desplegable {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  min-width: 190px;
+  z-index: 1;
+  margin-left: 20px;
+}
+.contenido-desplegable a {
+  color: #ddd;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 15px;
+}
+.contenido-desplegable a:hover, .menu-superior a:hover {
+  background-color: #ddd;
+  color: #333;
+  transition: 0.5s;
+}
+.desplegable:hover .contenido-desplegable {
+  display: block;
+}
+.desplegable:hover .boton-desplegable a {
+  background-color: #ddd;
+  color: #333;
+  transition: 0.5s;
+}
+
+/*FIN MENU*/
+/*INICIO FOOTER*/
+footer {
+  background-color: #333;
+  margin-top: 15px;
+  overflow: hidden;
+  bottom: 0;
+  width: 100%;
+}
+footer div {
+  text-align: center;
+  vertical-align: middle;
+}
+footer div div {
+  display: inline-block;
+  /*width: 200px;*/
+  margin-left: auto;
+  margin-right: auto;
+  margin: 10px;
+  text-align: center;
+}
+footer div div img {
+  max-width: 150px;
+  max-height: 150px;
+}
+/*FIN FOOTER*/
+/*INICIO SECTIONS Y ARTICLES*/
+section article div {
+  padding: 5px;
+}
+section article {
+  background: #f2f2f2;
+  border: 1px solid #333;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+section p {
+  padding: 15px;
+}
+section h2 {
+  padding: 5px;
+}
+section h3 {
+  padding-left: 25px;
+  font-style: italic;
+}
+section article div h1 {
+text-align: center;
+font-size: 30px;
+}
+article img {
+  width: 100%;
+  border:  1px solid #333;
+}
+aside div {
+  background: #f2f2f2;
+  border: 1px solid #333;
+  margin: 5px;
+  padding: 20px;
+  text-align: center;
+}
+aside ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+.img-articulos {
+  width: 80%;
+  margin: 0 auto;
+}
+.caja-tabla-central {
+  margin: 0 auto;
+}
+.tabla-index, .tabla-index td {
+  margin: 0 auto;
+  border: 1px solid #333;
+  text-align: center;
+}
+/*FIN SECTION ASIDE Y ARTICLES*/
+/*FORMULARIO*/
+.formulario {
+  text-align: center;
+}
+.formulario ul {
+  list-style-type: none;
+}
+.formulario ul li {
+  margin: 5px;
+}
+.footer-texto {
+  text-align: left!important;
+  margin: 5px;
+}
+.footer-texto img {
+  width: 25px;
+}
+.footer-commons {
+  text-align: left!important;
+  margin: 5px;
+  color: white;
+}

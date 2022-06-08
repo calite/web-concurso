@@ -1,0 +1,112 @@
+/*GRID PARA EL INDEX*/
+/*VISTA MOVIL BETA*/
+@media (min-width: 200px) and (max-width: 600px) {
+  body main {
+    width: 100%!important;
+  }
+  aside {
+    grid-column-start: 1!important;
+    grid-column-end: 4!important;
+    grid-row-start: 2!important;
+    grid-row-end: 2!important;
+    width: 93%!important;
+    margin: 0 auto!important; 
+  }
+  section {
+    grid-column-start: 1!important;
+    grid-column-end: 4!important;
+    grid-row-start: 1!important;
+    grid-row-end: 2!important;
+    width: 99%!important;
+  }
+}
+/*INICIO DE CONTENEDORES*/
+.contenedor {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto auto auto;
+  /*gap: 20px;*/
+}
+header {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+body {
+  margin: 0px;
+}
+nav {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+/*grid para el section y aside*/
+main {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 3;
+  grid-row-end: 4;
+
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto;
+
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+/*MAIN PARA EL FORM*/
+.main-form {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto; 
+}
+section {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+
+  width: 100%;
+  margin: 0 auto;
+}
+aside {
+  grid-column-start: 4;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+
+  height: fit-content;
+}
+/*grid para el footer*/
+footer {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 4;
+  grid-row-end: 5;
+
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto;
+}
+.contenedor-footer {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
+.footer-texto {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 2;
+  grid-row-end: 2;
+}
+.footer-commons {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 3;
+  grid-row-end: 3;
+}
+/*FIN DE CONTENEDORES*/
